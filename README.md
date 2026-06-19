@@ -1,6 +1,6 @@
 # AI Recruiter — Intelligent Candidate Ranking System
 
-Multi-signal rule-based ranker for the Redrob Hackathon: ranks 100K candidates for a Senior AI Engineer role using career history, text analysis, skill matching, behavioral signals, and honeypot detection.
+Multi-signal rule-based ranker : ranks 100K candidates for a Senior AI Engineer role using career history, text analysis, skill matching, behavioral signals, and honeypot detection.
 
 ## Quick Start
 
