@@ -1,0 +1,75 @@
+# Redrob Hackathon — Submission Metadata
+# Filled from the official submission_metadata_template.yaml
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "AI Recruiter"
+
+primary_contact:
+  name: "Mihir Ponkshe"
+  email: "mihirponkshe2005@gmail.com"
+  phone: "+91-8767932002"
+
+team_members:
+  - name: "Mihir Ponkshe"
+    email: "mihirponkshe2005@gmail.com"
+    role: "Developer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/mihirponkshe/AI_recruiter"
+
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./data/candidates.jsonl --out ./output/submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Claude"
+  - "Gemini"
+
+ai_usage_summary: |
+  Used Claude for architecture discussion, code review, and implementation
+  guidance. No candidate data was fed to any LLM during the ranking process.
+  The ranker is entirely rule-based with no LLM inference at runtime.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Rule-based multi-signal ranker with 8 scoring components and a multiplicative
+  behavioral modifier. Career history (product vs consulting, IR system
+  experience) and text analysis (headline + summary keyword density) are the
+  decisive signals; skill matching uses 100+ alias normalizations with
+  proficiency × duration weighting. Honeypot detection catches ~80 fraudulent
+  profiles via date-math and career-overflow checks. Education tier, salary fit,
+  and platform assessments provide fine-grained differentiation. Runtime is
+  ~60 seconds for 100K candidates on CPU, well within the 5-minute budget.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
