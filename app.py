@@ -13,7 +13,7 @@ from reasoning import generate_reasoning
 
 # ── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="AI Recruiter — Redrob Hackathon",
+    page_title="AI Recruiter — Intelligent Candidate Ranking",
     page_icon="🧠",
     layout="wide",
 )
@@ -21,8 +21,8 @@ st.set_page_config(
 # ── Header ───────────────────────────────────────────────────────────────────
 st.title("🧠 AI Recruiter — Intelligent Candidate Ranking")
 st.markdown("""
-**Redrob Hackathon Submission** — Multi-signal rule-based ranker for the
-Senior AI Engineer role. Upload candidates in JSONL format to see ranked results.
+Multi-signal intelligent ranker for the Senior AI Engineer role.
+Upload candidates in JSONL format to see ranked results.
 """)
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
@@ -276,4 +276,4 @@ else:
 
 # ── Footer ───────────────────────────────────────────────────────────────────
 st.markdown("---")
-st.caption("AI Recruiter — Redrob Hackathon Submission | Pure Python, zero external ML dependencies, <60s for 100K candidates")
+st.caption("AI Recruiter | Pure Python, zero external ML dependencies, <60s for 100K candidates")
