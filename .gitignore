@@ -1,7 +1,6 @@
 # Data files (too large for git)
 data/candidates.jsonl
 data/*.docx
-artifacts/features.pkl
 
 # Output
 output/submission.csv
