@@ -1,0 +1,3 @@
+# Core — zero dependencies for ranking (pure Python + stdlib)
+# Streamlit is only needed for the hosted sandbox demo
+streamlit>=1.30.0
